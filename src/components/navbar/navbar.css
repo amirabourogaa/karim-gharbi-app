@@ -1,0 +1,55 @@
+/* Navbar Styles */
+nav {
+  font-family: var(--nav-font);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 15px rgba(0, 0, 0, 0.1); /* Ombre 3D sur la nav */
+  transition: box-shadow 0.3s ease-in-out; /* Transition fluide de l'ombre */
+  position: relative; /* Permet d'ajouter un z-index à la navbar */
+  z-index: 10; /* Z-index plus élevé pour que la navbar reste au-dessus du slider */
+}
+
+/* Ajoutez une ombre plus marquée lors du scroll */
+nav.bg-opacity-80 {
+  background-color: rgba(0, 0, 0, 0.144); /* Couleur d'ombre du fond */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 12px 25px rgba(0, 0, 0, 0.2); /* Ombre plus forte lors du scroll */
+}
+
+/* Navbar Links */
+nav a {
+  font-size: 18px;
+  color: var(--default-color);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Slider Styles - Le slider en arrière-plan */
+.slider-container {
+  position: absolute; /* Absolu pour qu'il se place sous le header */
+  top: 0; /* Positionner tout en haut de la page */
+  left: 0;
+  width: 100%; /* Prendre toute la largeur de la page */
+  height: 100vh; /* Hauteur de la fenêtre */
+  z-index: 0; /* Slider derrière la navbar */
+}
+
+/* Pour rendre les images du slider responsives et couvrir toute la largeur */
+.slider-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Légende du slider */
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Styles supplémentaires pour les boutons de navigation */
+button {
+  z-index: 10; /* Placer les boutons au-dessus du slider */
+}

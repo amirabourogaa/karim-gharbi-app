@@ -1,0 +1,17 @@
+/* Fonts */
+:root {
+    --default-font: 'Montserrat', sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --nav-font: 'Montserrat', sans-serif;
+    --subtitle-font: 'Mansalva', cursive; /* Use cursive for subheadings for a fun touch */
+  }
+  
+  /* Global Colors */
+  :root {
+    --background-color: #ffffff; /* Light background color */
+    --default-color: #0d0d0d; /* Dark color for text */
+    --heading-color: #0d0d0d; /* Color for headings */
+    --accent-color: #e70013; /* Bright red for emphasis */
+    --surface-color: #ffffff; /* Light surface for elements like cards */
+    --contrast-color: #ffffff; /* White contrast color for text */
+  }

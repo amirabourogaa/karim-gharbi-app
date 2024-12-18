@@ -1,0 +1,29 @@
+/* Styles personnalisés pour la section Hero */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .w-full {
+  position: relative;
+  min-width: 100%;
+  height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Le texte est centré et visible sur l'image */
+h1 {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
