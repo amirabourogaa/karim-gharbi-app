@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import CalendarPage from './pages/Calendar'
+import ContactPage from './pages/Contact'
 // import "swiper/swiper-bundle.min.css";
 function App () {
   return (
@@ -18,6 +19,7 @@ function App () {
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/calendar' element={<CalendarPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
     </>
